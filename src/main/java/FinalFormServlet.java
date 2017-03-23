@@ -14,7 +14,9 @@ public class FinalFormServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setCharacterEncoding("utf-8");
-        req.getSession().setAttribute("address", req.getParameter("address"));
+        req.setAttribute("name", req.getParameter("name"));
+        req.setAttribute("first-name", req.getParameter("first-name"));
+        req.setAttribute("address", req.getParameter("address"));
         doGet(req, resp);
     }
 

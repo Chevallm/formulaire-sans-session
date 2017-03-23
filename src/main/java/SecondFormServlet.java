@@ -15,9 +15,8 @@ public class SecondFormServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setCharacterEncoding("utf-8");
-        HttpSession session = req.getSession();
-        session.setAttribute("name", req.getParameter("name"));
-        session.setAttribute("first-name", req.getParameter("first-name"));
+        req.setAttribute("name", req.getParameter("name"));
+        req.setAttribute("first-name", req.getParameter("first-name"));
         doGet(req, resp);
     }
 
@@ -25,6 +24,6 @@ public class SecondFormServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         resp.setCharacterEncoding("utf-8");
-        req.getRequestDispatcher("secondForm.html").forward(req, resp);
+        req.getRequestDispatcher("secondForm.jsp").forward(req, resp);
     }
 }

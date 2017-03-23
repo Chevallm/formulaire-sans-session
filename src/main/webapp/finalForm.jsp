@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Bonjour</title>
+		<title>Résumé</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
@@ -26,9 +26,9 @@
 	       					<p class="col s12">
 	       						<p>Vos informations :</p>
 	       						<ul>
-	       							<li>Prénom: ${sessionScope['first-name']}</li>
-	       							<li>Nom: ${sessionScope['name']}</li>
-	       							<li>Adresse: ${sessionScope['address']}</li>
+	       							<li>Prénom: ${requestScope['first-name']}</li>
+	       							<li>Nom: ${requestScope['name']}</li>
+	       							<li>Adresse: ${requestScope['address']}</li>
 	       						</ul>
 	       					</p>
 	       				</div>

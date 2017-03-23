@@ -1,10 +1,12 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<title>Bonjour</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 	</head>
 	<body>
 	  <nav>
@@ -34,6 +36,9 @@
 							          <label for="address">Adresse postale</label>
 							        </div>
 	      						</div>
+                                <!-- Hidden fields -->
+                                <input type="text" value="${requestScope['name']}" name="name" class="hidden" />
+                                <input type="text" value="${requestScope['first-name']}" name="first-name" class="hidden" />
 	      						<div class="row center">
 	      							<div class="col s6 offset-s3">
 	      								<button class="btn waves-effect waves-light" name="submit" type="submit">Suivant
