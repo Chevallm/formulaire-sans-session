@@ -10,7 +10,7 @@
 	<body>
 	  <nav>
 	    <div class="nav-wrapper">
-	      <a href="#" class="brand-logo center">Formulaire avec Session</a>
+	      <a href="#" class="brand-logo center">Formulaire sans Session</a>
 	    </div>
 	  </nav>
         
