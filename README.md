@@ -9,9 +9,6 @@ Une nouvelle page demande à l'utilisateur de saisir son adresse dans un seul ch
 Finalement une page récapitulative s'affiche avec toutes les informations de l'utilisateur (nom, prénom et adresse).
 Pour réaliser cette inscription en plusieurs étapes, vous utiliserez le mécanisme de session Web pour conserver temporairement les données saisies par l'utilisateur.
 
-## Modèle Maven du projet à télécharger
-webapp-template.zip
-
 ## Mise en place du projet
 Éditer le fichier pom.xml du template et modifier la balise artifactId pour spécifier le nom de votre projet. Modifier ensuite la section <developers> pour indiquer vos nom et email.
 
